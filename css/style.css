@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box !important;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+  }
+
+.row::after {
+    content: ' ';
+    clear: both;
+    display: block;
+}
+
+.main-container {
+    max-width: 1080px;
+    height: 1920px;
+    margin: auto;
+}
+
+.container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+
+
+/* Header_Section_Start */
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .header-left {
+    height: 180px;
+}
+
+.header .header-left .logo{
+    height: 100%;
+    width: 100%;
+    padding: 25px 30px;
+}
+
+.header .header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .header-right h1{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: cursive;
+    font-size: 38px;
+}
+/* Header_Section_End */
+
+/* Border_Section_Start */
+.border {
+    height: 7px;
+    width: 100%;
+    background-color: #1E1E1E;
+}
+/* Border_Section_End */
+
+/* Table_Section_Start */
+.tables {
+    padding: 25px 5px 0px 5px;
+}
+
+.table-columns {
+    column-count: 4;
+    /* column-gap: 1.25rem; */
+    orphans: 1;
+    widows: 1;
+  }
+
+  .table-columns .table-content {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+.tables .table-content h3 {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.tables .table-content h4 {
+    margin: 0;
+    padding-right: 10px;
+    padding-bottom: 1px;
+    text-transform: uppercase;
+    color: lightskyblue;
+}
+
+.tables .table-content h5 {
+    margin: 0;
+    
+}
+
+.tables .table-content h5 span {
+    color: red;
+}
+
+/* Table_Section_End */
+
+.v7 {
+    margin: 0;
+    padding-left: 7px;
+}
+
+/* Big_Footer_Section_Start */
+.big-footer .text h1 {
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+    margin: 0;
+}
+
+.big-footer .big-footer-logo {
+    display: flex;
+    justify-content: center;
+    height: 125px;
+}
+
+.big-footer .big-footer-logo .quai-logo {
+    padding-bottom: 10px;
+}
+/* Big_Footer_Section_End */
+
+/* Footer_Section_Start */
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: royalblue;
+    height: 142px;
+}
+
+.footer .footer-logo .cimian-logo {
+    height: 100%;
+    padding: 10px;
+}
+
+.footer .footer-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .footer-text h2{
+    margin: 0;
+    padding: 10px 10px;
+    color: #fff;
+}
+/* Footer_Section_End */
+
